@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Registration Form - Celebration International School</title>
+  <link rel="stylesheet" type="text/css" href="application.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Registration Form - Celebration International School</h1>
+    <form id="registrationForm" action="mailto:application@celebrate.org" method="post" enctype="text/plain">
+      <h2>STUDENT'S DETAILS</h2>
+      <label for="surname">Surname:</label>
+      <input type="text" id="surname" name="surname" required>
+
+      <label for="firstNames">First Names:</label>
+      <input type="text" id="firstNames" name="firstNames" required>
+
+      <label for="dateOfBirth">Date of Birth:</label>
+      <input type="date" id="dateOfBirth" name="dateOfBirth" required>
+
+      <label for="sex">Sex:</label>
+      <select id="sex" name="sex" required>
+        <option value="">Select</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+
+      <label for="presentSchool">Present School:</label>
+      <input type="text" id="presentSchool" name="presentSchool" required>
+
+      <label for="currentGrade">Current Grade:</label>
+      <input type="text" id="currentGrade" name="currentGrade" required>
+
+      <label for="gradeRequired">Grade Required:</label>
+      <input type="text" id="gradeRequired" name="gradeRequired" required>
+
+      <label for="allergies">Allergies and Medical Problems:</label>
+      <textarea id="allergies" name="allergies"></textarea>
+
+      <label for="physicalDisabilities">Physical Disabilities:</label>
+      <textarea id="physicalDisabilities" name="physicalDisabilities"></textarea>
+
+      <label for="medicalCertificate">Medical Certificate available:</label>
+      <select id="medicalCertificate" name="medicalCertificate" required>
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select>
+
+      <label for="learningDifficulties">Learning Difficulties:</label>
+      <textarea id="learningDifficulties" name="learningDifficulties"></textarea>
+
+      <label for="psychologicalReport">Psychological Report available:</label>
+      <select id="psychologicalReport" name="psychologicalReport" required>
+        <option value="">Select</option>
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select>
+
+      <label for="diagnosticTest">Diagnostic Test:</label>
+      <input type="checkbox" id="diagnosticTest" name="diagnosticTest">
+      <label for="diagnosticTestDate">Date:</label>
+      <input type="date" id="diagnosticTestDate" name="diagnosticTestDate">
+
+      <h2>FAMILY DETAILS</h2>
+      <label for="fatherSurname">Father's Surname:</label>
+      <input type="text" id="fatherSurname" name="fatherSurname" required>
+
+      <label for="fatherFirstNames">Father's First Names:</label>
+      <input type="text" id="fatherFirstNames" name="fatherFirstNames" required>
+
+      <label for="motherSurname">Mother's Surname:</label>
+      <input type="text" id="motherSurname" name="motherSurname" required>
+
+      <label for="motherFirstNames">Mother's First Names:</label>
+      <input type="text" id="motherFirstNames" name="motherFirstNames" required>
+
+      <label for="maritalStatus">Marital Status:</label>
+      <select id="maritalStatus" name="maritalStatus" required>
+        <option value="">Select</option>
+        <option value="single">Single</option>
+        <option value="separated">Separated</option>
+        <option value="divorced">Divorced</option>
+        <option value="widowed">Widowed</option>
+        <option value="married">Married</option>
+        <option value="remarried">Remarried</option>
+      </select>
+
+      <label for="fatherOccupation">Father's Occupation:</label>
+      <input type="text" id="fatherOccupation" name="fatherOccupation" required>
+
+      <label for="motherOccupation">Mother's Occupation:</label>
+      <input type="text" id="motherOccupation" name="motherOccupation" required>
+
+      <label for="fatherWorkPhone">Father's Work Phone:</label>
+      <input type="tel" id="fatherWorkPhone" name="fatherWorkPhone" required>
+
+      <label for="fatherHomePhone">Father's Home Phone:</label>
+      <input type="tel" id="fatherHomePhone" name="fatherHomePhone">
+
+      <label for="fatherCellphone">Father's Cellphone:</label>
+      <input type="tel" id="fatherCellphone" name="fatherCellphone" required>
+
+      <label for="motherWorkPhone">Mother's Work Phone:</label>
+      <input type="tel" id="motherWorkPhone" name="motherWorkPhone" required>
+
+      <label for="motherHomePhone">Mother's Home Phone:</label>
+      <input type="tel" id="motherHomePhone" name="motherHomePhone">
+
+      <label for="motherCellphone">Mother's Cellphone:</label>
+      <input type="tel" id="motherCellphone" name="motherCellphone" required>
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="correspondenceAddress">Address to which correspondence should be sent:</label>
+      <textarea id="correspondenceAddress" name="correspondenceAddress" required></textarea>
+
+      <label for="emergencyContact">Contact person and number in case of emergency:</label>
+      <textarea id="emergencyContact" name="emergencyContact" required></textarea>
+
+      <label for="doctorName">Family Doctor's name:</label>
+      <input type="text" id="doctorName" name="doctorName" required>
+
+      <label for="doctorContact">Doctor's Contact Tel No.:</label>
+      <input type="tel" id="doctorContact" name="doctorContact" required>
+
+      <label for="doctorAddress">Doctor's Address:</label>
+      <textarea id="doctorAddress" name="doctorAddress" required></textarea>
+
+      <label for="medicalAid">Medical Aid:</label>
+      <input type="text" id="medicalAid" name="medicalAid" required>
+
+      <h2>CHURCH INFORMATION</h2>
+      <label for="churchAffiliation">Church Affiliation:</label>
+      <input type="text" id="churchAffiliation" name="churchAffiliation" required>
+
+      <label for="churchLeaderName">Name of Pastor/Priest/Leader:</label>
+      <input type="text" id="churchLeaderName" name="churchLeaderName" required>
+
+      <label for="churchLeaderContactOffice">Church Leader Contact Office:</label>
+      <input type="tel" id="churchLeaderContactOffice" name="churchLeaderContactOffice" required>
+
+      <label for="churchLeaderContactHome">Church Leader Contact Home:</label>
+      <input type="tel" id="churchLeaderContactHome" name="churchLeaderContactHome" required>
+
+      <label for="churchLeaderContactCell">Church Leader Contact Cell:</label>
+      <input type="tel" id="churchLeaderContactCell" name="churchLeaderContactCell" required>
+
+      <h2>DECLARATION</h2>
+      <p>
+        I/We as parent(s)/guardian(s) of <span id="studentName"></span> fully understand that the CELEBRATION SCHOOL is under the pastoral covering of Celebration Ministries International.
+      </p>
+      <p>
+        Discipline: The Principal of Celebration School is authorized to make a decision in loco parentis. Your child will be subject to discipline, and corporal correction may be administered to the child when necessary, but we hold that parents are responsible for the education and discipline of their children and will involve them whenever feasible. I/We agree that my/our child shall be bound by all Celebration School rules and regulations.
+      </p>
+
+      <h2>TERMINATION</h2>
+      <p>
+        CELEBRATION SCHOOL requests that parents give a term’s notice or a term’s fees in lieu of notice in the case of withdrawal from the programme.
+      </p>
+
+      <p>
+        Signature of Parent/Guardian (Mother): <input type="text" id="motherSignature" name="motherSignature" required> Date: <input type="date" id="motherSignatureDate" name="motherSignatureDate" required>
+      </p>
+
+      <p>
+        Signature of Parent/Guardian (Father): <input type="text" id="fatherSignature" name="fatherSignature" required> Date: <input type="date" id="fatherSignatureDate" name="fatherSignatureDate" required>
+      </p>
+
+      <h2>Additional Questions</h2>
+      <p>We appreciate your time in answering the following questions:</p>
+
+      <label for="reasonEnrollment">1. Please explain your reason(s) for enrolling your child in Celebration School rather than a conventional school?</label>
+      <textarea id="reasonEnrollment" name="reasonEnrollment" required></textarea>
+
+      <label for="parentRole">2. What role do you see yourself playing as a parent in your child’s education?</label>
+      <textarea id="parentRole" name="parentRole" required></textarea>
+
+      <label for="findOut">3. How did you find out about Celebration School?</label>
+      <textarea id="findOut" name="findOut" required></textarea>
+
+      <input type="submit" value="Enroll">
+    </form>
+  </div>
+
+  <script>
+    // Add JavaScript code if necessary
+    const form = document.getElementById('registrationForm');
+    const studentName = document.getElementById('studentName');
+    const surname = document.getElementById('surname');
+    const firstNames = document.getElementById('firstNames');
+
+    // Update student name in the declaration section
+    form.addEventListener('submit', (event) => {
+      studentName.textContent = surname.value + ', ' + firstNames.value;
+    });
+  </script>
+</body>
+</html>

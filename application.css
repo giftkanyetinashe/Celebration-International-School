@@ -1,0 +1,83 @@
+  /* Add your CSS styles here */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1, h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Custom styles for specific form elements */
+  #studentName {
+    font-weight: bold;
+  }
+  
+  .signature-input {
+    display: inline-block;
+    width: 250px;
+    margin-right: 10px;
+  }
+  
+  .date-input {
+    width: 150px;
+  }
+  
+  .additional-questions textarea {
+    height: 100px;
+  }
+  
+  .additional-questions input[type="submit"] {
+    align-self: center;
+    width: auto;
+    margin-top: 20px;
+  }
+
