@@ -1,0 +1,426 @@
+/* Hide the default scroll bar */
+::-webkit-scrollbar {
+    width: 8px;
+    background-color: #f5f5f5;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f5f5f5;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  
+  body {
+    background-color: #d1d0d0;
+  }
+  
+  
+  
+  header {
+      position: fixed;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 3);
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #ffffff;
+      z-index: 100;
+      transition: all 0.3s ease;
+      border-radius: 28px;
+    }
+    
+    header.hide {
+      top: -50px;
+    }
+    
+    
+    
+    .logo-container {
+      position: relative;
+      display: inline-block;
+      top: 60px;
+      left: 300px;
+      margin-top: 10px;
+      text-align: center;
+      transition: all 0.3s ease;
+      transform: translateX(-50%) translateY(-50%);
+    }
+    
+    .logo-container img {
+      width: 500px; /* Adjust the width to your desired size */
+      height: auto;
+      transition: all 0.3s ease;
+    }
+    
+    .logo-container.enlarged {
+      width: 200px; /* Adjust the enlarged size as desired */
+    }
+    
+  
+    
+    .line {
+      width: 100%;
+      height: 2px;
+      background-color: #333;
+      top: 50px;
+      transition: all 0.3s ease;
+    }
+    
+    .line.active {
+      background-color: transparent;
+    }
+    
+    .divider {
+      position: absolute;
+      border: none;
+      border-top: 1px solid rgb(201, 194, 194); /* Adjust the line color and style as needed */
+      top: 40px;
+      left: 0;
+      width: 100%;
+      z-index: 1;
+    }
+    
+    
+    .social-media-icons {
+      position: absolute;
+      top: 0;
+      right: 150px;
+      margin-top: 10px; /* Adjust the margin-top value to add spacing from the top */
+    }
+    
+    .social-media-icons img {
+      width: 25px;
+      height: 25px;
+    }
+    
+    .social-media-icons span {
+      font-size: 14px;
+      color: #555;
+      position: absolute;
+      top: 10px;
+    }
+    
+    
+    
+    
+    .navigation {
+      position: relative;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      background-color: transparent;
+      padding: 10px;
+    }
+    
+    .nav-button {
+      padding: 10px 20px;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      position: relative;
+    }
+  
+    .nav-button:hover {
+      background-color: #eaebd0; /* Adjust the button hover background color as desired */
+    }
+  
+    .nav-button::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 0%;
+      height: 2px;
+      background-color: transparent;
+      transition: background-color 1s ease;
+    }
+    
+    .nav-button:hover::after {
+      background-color: #333;
+      width: 100%;
+    }
+  
+    .dropdown {
+      position: relative;
+    }
+    
+    .dropdown .dropdown-toggle::after {
+      content: "\25BE";
+      margin-left: 5px;
+    }
+    
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+  
+  
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      background-color: #fff;
+      padding: 10px;
+      width: max-content;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+  
+    .dropdown:hover .dropdown-menu {
+      display: block;
+    }
+  
+    .dropdown-menu a {
+      display: block;
+      color: rgb(18, 4, 139);
+      font-size: 16px;
+      line-height: 1.5;
+      padding: 5px 0;
+      border-bottom: 1px solid gold;
+      text-decoration: none;
+    }
+  
+    .dropdown-menu a:hover {
+      background-color: #ccc;
+    }
+  
+    .dropdown-menu a:last-child {
+      border-bottom: none;
+    }
+  
+    html {
+      scroll-behavior: smooth;
+    }
+
+
+    /* styles.css */
+
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f1f1f1;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1, h2 {
+  color: #333;
+}
+
+/*---------------------praise-----------------------*/
+.section-praise {
+  margin-top: 70px;
+  background-color: #b6b3e4;
+  border-radius: 30px;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.section-praise h2{
+  font-size: 28px;
+  font-family: "akili";
+  font-weight: semi bold;
+  position: absolute;
+  left:350px
+}
+.content-praise {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: justify;
+  margin-left: 90px;
+  margin-right:30px ;
+}
+.content-praise p {
+  font-size: 24px;
+  font-family: "akili";
+  font-weight: normal;
+  margin-right: 90px;
+}
+
+.image-praise {
+  flex-basis: 50%;
+  text-align: center;
+}
+
+.image-praise img {
+  width: 400px;
+  height: 350px;
+  border-radius: 30px;
+}
+
+/*---------------------------sukkot section-----------------------------*/
+.section-sukkot {
+  margin-top: 70px;
+  background-color: #cac7e9;
+  border-radius: 30px;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.section-sukkot h2{
+  font-size: 28px;
+  font-family: "akili";
+  font-weight: semi bold;
+  position: absolute;
+  right:300px
+}
+.content-sukkot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: justify;
+  margin-left: 20px;
+  margin-right:30px ;
+}
+.content-sukkot p {
+  font-size: 24px;
+  font-family: "akili";
+  font-weight: normal;
+  margin-left: 90px;
+}
+
+.image-sukkot {
+  flex-basis: 50%;
+  text-align: center;
+}
+
+.image-sukkot img {
+  width: 400px;
+  height: 450px;
+  border-radius: 30px;
+}
+
+
+/*----------------------section-ex---------------------*/
+.section-ex {
+  margin-top: 70px;
+  background-color: #b6b3e4;
+  border-radius: 30px;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.section-ex h2{
+  font-size: 28px;
+  font-family: "akili";
+  font-weight: semi bold;
+  position: absolute;
+  left:350px
+}
+.content-ex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: justify;
+  margin-left: 90px;
+  margin-right:30px ;
+}
+.cont-ex p {
+  font-size: 24px;
+  font-family: "akili";
+  font-weight: normal;
+  margin-right: 90px;
+}
+
+
+
+
+.section {
+  margin-top: 50px;
+  background-color: #fff;
+  border-radius: 30px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.image {
+  flex-basis: 40%;
+  text-align: center;
+}
+
+.image img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.badges {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.badge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.badge i {
+  font-size: 24px;
+  color: #333;
+}
+
+.badge p {
+  margin: 14px;
+  color: #242323;
+  text-align: center;
+
+}
+
+/* Icon Styling */
+.fa-music {
+  color: #c71585;
+}
+
+.fa-leaf {
+  color: #228b22;
+}
+
+.fa-building {
+  color: #1e90ff;
+}
+
+.fa-calendar-alt {
+  color: #ff8c00;
+}
+
+.fa-star {
+  color: #ffd700;
+}
+
+.fa-stopwatch {
+  color: #dc143c;
+}
+
+.fa-hands-helping {
+  color: #006400;
+}
+.fas.fa-lightbulb {
+  font-size: 24px;
+  color: #ffcc00;
+  /* Add additional styles as needed */
+}
+
+    
