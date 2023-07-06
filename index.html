@@ -1,3 +1,43 @@
-<h1>index</h1>
-<button href="home.html">home</button>
-<button class="nav-button" onclick="window.location.href = 'home.html';">home</button>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Welcome to My Website</title>
+  <style>
+    /* Center the logo */
+    .logo-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    
+    .logo {
+      width: 200px;
+      height: 200px;
+      animation: logoAnimation 1s ease-in-out forwards;
+    }
+    
+    /* Animation keyframes */
+    @keyframes logoAnimation {
+      0% {
+        transform: scale(0);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="logo-container">
+    <img src="logo.png" alt="Logo" class="logo">
+  </div>
+  
+  <script>
+    // After a delay, redirect to home.html
+    setTimeout(function() {
+      window.location.href = "home.html";
+    }, 1000);
+  </script>
+</body>
+</html>
