@@ -41,3 +41,10 @@ function displayImages() {
 }
 
 
+$(document).ready(function() {
+  $('.menu-icon').on('click', function() {
+    $('.mobile-menu').slideToggle();
+  });
+});
+
+
