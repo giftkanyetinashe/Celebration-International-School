@@ -480,9 +480,6 @@ header {
 @media screen and (max-width: 480px) {
   /* Add your CSS styles for mobile screens here */
 
-  .navigation {
-    display: none;
-  }
   .logo-container {
     position: relative; /* Override position fixed */
     transform: none; /* Remove any existing transformations */
@@ -503,13 +500,8 @@ header {
     cursor: pointer;
     z-index: 100;
   }
-  .school-name-tab {
-    display: none;
-  }
 
-  .three-image-tab {
-    display: none;
-  }
+
 }
 
 
