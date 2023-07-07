@@ -483,6 +483,26 @@ header {
   .navigation {
     display: none;
   }
+  .logo-container {
+    position: relative; /* Override position fixed */
+    transform: none; /* Remove any existing transformations */
+    margin-top: 0; /* Adjust margin-top if needed */
+    left: 0;
+    top: 3em;
+  }
+  
+  
+  /*-------------------Navigation For Tablets-------------------*/
+  .menu-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    z-index: 100;
+  }
   .school-name-tab {
     display: none;
   }
